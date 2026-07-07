@@ -7,18 +7,16 @@ body, h1, h2, header, p, ul{
 }
 
 body {
-  background-color: rgb(23, 23, 43);
+  background-image: linear-gradient(to bottom, rgb(8, 4, 27), rgb(15, 9, 43), rgb(133, 122, 110));
   color: white;
   font-family: Verdana;
   line-height: 1.6;
   display: flex;
   flex-direction: column;
   height: 100vh;
+  background-attachment: fixed;
 }
-header {
-  background-color: rgb(39, 52, 90);
-  width: 100%;
-}
+
 img {
   width: 1000px;
   max-width: 100%;
@@ -51,7 +49,7 @@ a {
   box-sizing: border-box;
   width: 60%;
   padding: 30px 50px;
-  background-color: rgb(13, 16, 31);
+  background-color: rgb(16, 13, 39);
   text-align: center;
   flex-grow: 1;
   flex-direction: column;

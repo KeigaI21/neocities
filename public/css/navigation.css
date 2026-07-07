@@ -1,20 +1,28 @@
 /* Top navigation bar */
-.nav {
+header {
+  background-color: rgb(41, 38, 65);
+  width: 100%;
+  border-bottom-style: solid;
+  border-width: 3px;
+  border-color: rgb(139, 134, 119);
+  box-sizing: border-box;
+}
+header ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
-.nav li {
+header ul li {
   display: inline-block;
   font-size: 18px;
   padding: 0;
 }
-.nav li a {
+header ul li a {
     display: inline-block;
     padding: 10px 18px;
     font-weight: normal;
 }
-.nav li a:hover {
+header ul li a:hover {
   background-color: rgb(75, 90, 131);
 }
 
