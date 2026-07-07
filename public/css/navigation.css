@@ -1,0 +1,42 @@
+/* Top navigation bar */
+.nav {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.nav li {
+  display: inline-block;
+  font-size: 18px;
+  padding: 0;
+}
+.nav li a {
+    display: inline-block;
+    padding: 16px;
+}
+.nav li a:hover {
+  background-color: rgb(99, 110, 145);
+}
+
+/* Hyperlinks */
+/* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(255, 232, 189);
+}
+
+/* selected link */
+a:active {
+  color: white;
+}
+a {
+  text-decoration-line: none;
+}
