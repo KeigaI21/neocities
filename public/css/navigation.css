@@ -12,6 +12,7 @@
 .nav li a {
     display: inline-block;
     padding: 16px;
+    font-weight: normal;
 }
 .nav li a:hover {
   background-color: rgb(75, 90, 131);
@@ -36,7 +37,4 @@ a:hover {
 /* selected link */
 a:active {
   color: white;
-}
-a {
-  text-decoration-line: none;
 }
