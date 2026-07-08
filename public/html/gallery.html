@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Keii Illustration - Gallery</title>
-    <!-- The style.css file allows you to change the look of your web pages.
-         If you include the next line in all your web pages, they will all share the same look.
-         This makes it easier to make new pages for your site. -->
     <link href="../css/style.css" rel="stylesheet" type="text/css" media="all">
     <link href="../css/navigation.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/modal.css" rel="stylesheet" type="text/css" media="all">
+    <!-- Enlarges image when clicked -->
+    <script src="../js/imagepopup.js" defer></script>
   </head>
   <body>
     <header>
@@ -20,17 +20,23 @@
       </ul>
     </header>
     
+    <!-- Pop up image box, see modal.css and imagepopup.js -->
+    <div id="my-modal" class="modal">
+      <span class="close-button" onclick="closePopUp()">X</span>
+      <img id="my-modal-image" class="modal-image">
+    </div>
+
     <div class="center-box">
       <h1>Art Gallery</h1>
 
       <h2>Syzygy</h2>
-      <img src="../images/syzygy.webp" alt="An artwork titled syzygy. It depicts a woman in a white dress who controls a silver substance to create weapons.">
+      <img src="../images/syzygy.webp" alt="An artwork titled syzygy. It depicts a woman in a white dress who controls a silver substance to create weapons." onclick="popUp(this)">
       
       <h2>Agent of Hermes in the Heart of Darkness</h2>
-      <img class="vertimg" src="../images/hermes.webp" alt="An agent of Hermes on a mission in the underworld.">
+      <img class="vert-img" src="../images/hermes.webp" alt="An agent of Hermes on a mission in the underworld." onclick="popUp(this)">
       
       <h2>Lightyears</h2>
-      <img src="../images/lightyears.webp" alt="An artwork titled lightyears. It depicts an giant stone eye with stars in its pupil. Underneath is a lonely lady with clouds, rockets, and a radar in the background.">
+      <img src="../images/lightyears.webp" alt="An artwork titled lightyears. It depicts an giant stone eye with stars in its pupil. Underneath is a lonely lady with clouds, rockets, and a radar in the background." onclick="popUp(this)">
     </div>
   </body>
 </html>
