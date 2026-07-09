@@ -4,7 +4,7 @@ header {
   width: 100%;
   border-bottom-style: solid;
   border-width: 3px;
-  border-color: rgb(139, 134, 119);
+  border-color: rgb(227, 214, 238);
   box-sizing: border-box;
 }
 header ul {
@@ -23,7 +23,7 @@ header ul li a {
     font-weight: normal;
 }
 header ul li a:hover {
-  background-color: rgb(75, 90, 131);
+  background-color: rgb(70, 55, 82);
 }
 
 /* Hyperlinks */
@@ -39,7 +39,7 @@ a:visited {
 
 /* mouse over link */
 a:hover {
-  color: rgb(255, 232, 189);
+  color: rgb(233, 209, 252);
 }
 
 /* selected link */
