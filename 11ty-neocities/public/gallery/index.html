@@ -1,35 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    
-
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Keii Illustration - Gallery</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/navigation.css">
     
-<link href="/css/modal.css" rel="stylesheet" type="text/css" media="all">
-<!-- Enlarges image when clicked -->
-<script src="/js/imagepopup.js" defer></script>
-
+      <link href="/css/modal.css" rel="stylesheet">
+    
+    
+      <script src="/js/imagepopup.js" defer></script>
+    
   </head>
   <body>
-    
-<!-- Pop up image box, see modal.css and imagepopup.js -->
-<div id="my-modal" class="modal">
-    <span class="close-button" onclick="closePopUp()">X</span>
-  <img id="my-modal-image" class="modal-image">
-</div>
-
     <header><ul>
     <li> <a href="/">Home</a>
     <li> <a href="/gallery/">Gallery</a>
     <li> <a href="/contact/">Contact</a>
     <li> <a href="/aboutme/">About me</a>
 </ul></header>
-    <div class="center-box"><h1>Art Gallery</h1>
+    <!-- Pop up image box, see modal.css and imagepopup.js -->
+<div id="my-modal" class="modal">
+    <span class="close-button" onclick="closePopUp()">X</span>
+  <img id="my-modal-image" class="modal-image">
+</div>
 
+<div class="center-box">
+  <h1>Art Gallery</h1>
       <h2>Syzygy</h2>
       <img src="/images/syzygy.webp" alt="An artwork titled syzygy. It depicts a woman in a white dress who controls a silver substance to create weapons." onclick="popUp(this)">
       
@@ -37,8 +35,7 @@
       <img class="vert-img" src="/images/hermes.webp" alt="An agent of Hermes on a mission in the underworld." onclick="popUp(this)">
       
       <h2>Lightyears</h2>
-      <img src="/images/lightyears.webp" alt="An artwork titled lightyears. It depicts an giant stone eye with stars in its pupil. Underneath is a lonely lady with clouds, rockets, and a radar in the background." onclick="popUp(this)"></div>
-    
-
+      <img src="/images/lightyears.webp" alt="An artwork titled lightyears. It depicts an giant stone eye with stars in its pupil. Underneath is a lonely lady with clouds, rockets, and a radar in the background." onclick="popUp(this)">
+</div>
   </body>
 </html>

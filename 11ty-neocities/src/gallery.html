@@ -1,9 +1,17 @@
 ---
 title: Keii Illustration - Gallery
-layout: layouts/modal.njk
+layout: layouts/base.njk
+css: /css/modal.css
+scripts: /js/imagepopup.js
 ---
-<h1>Art Gallery</h1>
+<!-- Pop up image box, see modal.css and imagepopup.js -->
+<div id="my-modal" class="modal">
+    <span class="close-button" onclick="closePopUp()">X</span>
+  <img id="my-modal-image" class="modal-image">
+</div>
 
+<div class="center-box">
+  <h1>Art Gallery</h1>
       <h2>Syzygy</h2>
       <img src="/images/syzygy.webp" alt="An artwork titled syzygy. It depicts a woman in a white dress who controls a silver substance to create weapons." onclick="popUp(this)">
       
@@ -12,3 +20,4 @@ layout: layouts/modal.njk
       
       <h2>Lightyears</h2>
       <img src="/images/lightyears.webp" alt="An artwork titled lightyears. It depicts an giant stone eye with stars in its pupil. Underneath is a lonely lady with clouds, rockets, and a radar in the background." onclick="popUp(this)">
+</div>
