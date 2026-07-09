@@ -1,0 +1,48 @@
+/* Top navigation bar */
+header {
+  background-color: rgb(41, 38, 65);
+  width: 100%;
+  border-bottom-style: solid;
+  border-width: 3px;
+  border-color: rgb(139, 134, 119);
+  box-sizing: border-box;
+}
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+header ul li {
+  display: inline-block;
+  font-size: 18px;
+  padding: 0;
+}
+header ul li a {
+    display: inline-block;
+    padding: 10px 18px;
+    font-weight: normal;
+}
+header ul li a:hover {
+  background-color: rgb(75, 90, 131);
+}
+
+/* Hyperlinks */
+/* unvisited link */
+a:link {
+  color: white;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(255, 232, 189);
+}
+
+/* selected link */
+a:active {
+  color: white;
+}
