@@ -37,18 +37,42 @@
   border-style: none;
   margin: auto;
   justify-content: center;
+  overflow: hidden;
 }
 /* Override hyperlink stylization to match color gradient */
 .center-box-clone a {
   color: transparent;
 }
-/* For name in corner */
+/* For name in corner
 .center-box-clone h2 {
   font-family: nunito;
   position: absolute;
   font-size: 28px;
   bottom: 0px;
   left: 12px;
+}
+*/
+/* animated text */
+@keyframes moving-text {
+  0% {
+    right: -180%;
+  }
+  75% {
+    right: 120%;
+  }
+  100% {
+    right: 120%;
+  }
+}
+
+.center-box-clone h2 {
+  font-family: nunito;
+  font-size: 500px;
+  position: absolute;
+  animation-name: moving-text;
+  animation-timing-function: linear;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
 }
 /* resize to inside border */
 .center-box-clone img {
