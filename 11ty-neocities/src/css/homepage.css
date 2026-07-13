@@ -16,13 +16,6 @@
   padding: 0px 0px;
 
 }
-/* For ASCII image */
-.center-box pre {
-  font-size: 12px;
-  line-height: 1.2;
-  letter-spacing: 0px;
-  font-family: monospace
-}
 /* Clone of center box with reverse gradient for text color */
 .center-box-clone
 {
@@ -43,16 +36,7 @@
 .center-box-clone a {
   color: transparent;
 }
-/* For name in corner
-.center-box-clone h2 {
-  font-family: nunito;
-  position: absolute;
-  font-size: 28px;
-  bottom: 0px;
-  left: 12px;
-}
-*/
-/* animated text */
+/* Animated text */
 @keyframes moving-text {
   0% {
     right: -180%;
@@ -64,7 +48,7 @@
     right: 120%;
   }
 }
-
+/* Font and animation settings for homepage center box text */
 .center-box-clone h2 {
   user-select: none;
   font-family: nunito;

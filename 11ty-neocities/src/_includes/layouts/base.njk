@@ -9,8 +9,13 @@
     {% if css %}
       <link href="{{ css }}" rel="stylesheet">
     {% endif %}
+    <script src="/js/usersettings.js"></script>
+    <script src="/js/lightdarkmodegeneral.js"></script>
     {% if scripts %}
-      <script src="{{ scripts }}" defer></script>
+      <script src="{{ scripts }}"></script>
+    {% endif %}
+    {% if scriptsdefer %}
+      <script src="{{ scriptsdefer }}" defer></script>
     {% endif %}
   </head>
   <body>
