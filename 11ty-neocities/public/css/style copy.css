@@ -1,48 +1,32 @@
 /* Global settings */
-:root {
-  /* Accent color for whole website */
-  --primary-color: white;
-  --secondary-color: rgb(24, 35, 255);
-  --secondary-color-darkened: rgb(11, 19, 182);
-}
-.dark-mode {
-  --primary-color: rgb(5, 5, 104);
-  --secondary-color: white;
-}
 @font-face {
   font-family: playfair;
   src: url("/fonts/PlayfairDisplay.ttf");
-}
-@font-face {
-  font-family: nunito;
-  src: url("/fonts/Nunito.ttf");
 }
 * {
   font-family: playfair;
   letter-spacing: 1px;
   line-height: 1.6;
 }
-.clickable {
-  cursor: pointer;
-}
-
 /* Font adjustments */
 p, ul, li, a {
   letter-spacing: normal;
 }
 
 /* Box resets */
-body, h1, h2, header, p, ul, pre, a{
+body, h1, h2, header, p, ul{
   margin: 0;
   padding: 0;
 }
 
 body {
-  cursor: default;
-  background-color: var(--primary-color);
+  background-image: linear-gradient(to bottom, rgb(8, 4, 27) 70%, rgb(60, 40, 150) 80%, rgb(235, 224, 252));
+  background-image: url("/images/nasa.jpg");
+  background-color: rgb(112, 107, 117);
   background-blend-mode: overlay;
   background-size: contain;
-  color: var(--secondary-color);
+  color: white;
+  font-family: Verdana;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -66,9 +50,7 @@ a {
   text-decoration-line: none;
 }
 hr {
-  border-style: solid;
   width:80%;
-  color: var(--secondary-color)
 }
 
 /* Middle section of every page, where all the content resides */
@@ -78,10 +60,7 @@ hr {
   box-sizing: border-box;
   width: 60%;
   padding: 30px 80px;
-  background-color: var(--primary-color);
-  border-style: none solid;
-  border-color: var(--secondary-color);
-  border-width: 4px;
+  background-image: linear-gradient(to right, rgb(76, 69, 99), rgb(16, 13, 39) 5%, rgb(16, 13, 39) 95%, rgb(76, 69, 99));
   text-align: center;
   flex-grow: 1;
   flex-direction: column;

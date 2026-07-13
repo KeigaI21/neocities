@@ -1,10 +1,10 @@
 /* Top navigation bar */
 header {
-  background-color: rgb(41, 38, 65);
+  background-color: var(--primary-color);
   width: 100%;
   border-bottom-style: solid;
   border-width: 3px;
-  border-color: rgb(227, 214, 238);
+  border-color: var(--secondary-color);
   box-sizing: border-box;
 }
 header ul {
@@ -18,31 +18,14 @@ header ul li {
   padding: 0;
 }
 header ul li a {
-    display: inline-block;
-    padding: 10px 18px;
-    font-weight: normal;
+  display: inline-block;
+  padding: 5px 15px;
+  font-weight: normal;
 }
 header ul li a:hover {
-  background-color: rgb(70, 55, 82);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
-
-/* Hyperlinks */
-/* unvisited link */
-a:link {
-  color: white;
-}
-
-/* visited link */
-a:visited {
-  color: white;
-}
-
-/* mouse over link */
-a:hover {
-  color: rgb(233, 209, 252);
-}
-
-/* selected link */
-a:active {
-  color: white;
+a {
+  color: var(--secondary-color);
 }

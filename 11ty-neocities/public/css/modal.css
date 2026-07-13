@@ -21,6 +21,7 @@
     right: 35px;
     margin: auto;
     padding: 20px;
+    color: var(--primary-color)
 }
 .close-button:hover {
     background-color: rgba(220, 220, 220, 0.445);

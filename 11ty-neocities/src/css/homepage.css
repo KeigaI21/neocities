@@ -1,0 +1,58 @@
+/* Middle section of every page, where all the content resides */
+.center-box {
+/* Resets from original */
+  display: block;
+  background-image: none;
+  flex-grow: 0;
+
+/* New settings */
+  width: 500px;
+  height: 500px;
+  background-image: linear-gradient(135deg, var(--secondary-color), var(--secondary-color-darkened) 50%, var(--primary-color) 50%);
+  border-style: solid;
+  border-width: 2px;
+  text-align: left;
+  align-items: center;
+  padding: 0px 0px;
+
+}
+/* For ASCII image */
+.center-box pre {
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0px;
+  font-family: monospace
+}
+/* Clone of center box with reverse gradient for text color */
+.center-box-clone
+{
+  display: flex;
+  position: relative;
+  /* Subtract padding and border of center box */
+  top: -2px;
+  left: -2px;
+  color: transparent;
+  background-image: linear-gradient(315deg, var(--secondary-color), var(--secondary-color) 50%, var(--primary-color) 50%);
+  background-clip: text;
+  border-style: none;
+  margin: auto;
+  justify-content: center;
+}
+/* Override hyperlink stylization to match color gradient */
+.center-box-clone a {
+  color: transparent;
+}
+/* For name in corner */
+.center-box-clone h2 {
+  font-family: nunito;
+  position: absolute;
+  font-size: 28px;
+  bottom: 0px;
+  left: 12px;
+}
+/* resize to inside border */
+.center-box-clone img {
+  width: calc(100% - 4px);
+  height: calc(100% - 4px);
+}
+
