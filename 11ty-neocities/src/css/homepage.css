@@ -66,6 +66,7 @@
 }
 
 .center-box-clone h2 {
+  user-select: none;
   font-family: nunito;
   font-size: 500px;
   position: absolute;
@@ -74,8 +75,11 @@
   animation-duration: 5s;
   animation-iteration-count: infinite;
 }
-/* resize to inside border */
+
 .center-box-clone img {
+  cursor: pointer;
+  z-index: 1;
+  /* resize to inside border */
   width: calc(100% - 4px);
   height: calc(100% - 4px);
 }

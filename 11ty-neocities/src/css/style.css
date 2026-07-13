@@ -6,8 +6,9 @@
   --secondary-color-darkened: rgb(11, 19, 182);
 }
 .dark-mode {
-  --primary-color: rgb(5, 5, 104);
-  --secondary-color: white;
+  --primary-color: rgb(34, 28, 44);
+  --secondary-color: rgb(245, 240, 218);
+  --secondary-color-darkened: rgb(79, 63, 97);
 }
 @font-face {
   font-family: playfair;
