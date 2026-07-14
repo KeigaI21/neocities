@@ -22,8 +22,17 @@
   padding: 10px 20px;
   /* Overwrites hyperlink style for rest of webstie */
   font-weight: normal;
+  text-wrap: nowrap;
 }
 .nav a:hover {
   background-color: var(--secondary-color);
   color: var(--primary-color);
+}
+/* For phone screens */
+@media screen and (max-width: 500px) {
+  .nav a {
+    padding: 10px 10px;
+    font-weight: normal;
+    font-size: 14px;
+  }
 }
