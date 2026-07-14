@@ -1,31 +1,28 @@
 /* Top navigation bar */
-header {
-  background-color: var(--primary-color);
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   width: 100%;
-  border-bottom-style: solid;
-  border-width: 3px;
-  border-color: var(--secondary-color);
-  box-sizing: border-box;
-}
-header ul {
+  padding: 0;
   margin: 0;
-  padding: 0;
-  list-style-type: none;
-}
-header ul li {
-  display: inline-block;
+  box-sizing: border-box;
+
+  border-color: var(--secondary-color);
+  background-color: var(--primary-color);
   font-size: 18px;
-  padding: 0;
 }
-header ul li a {
-  display: inline-block;
-  padding: 5px 15px;
+.nav span {
+  display: flex;
+  flex-direction: row;
+}
+.nav a {
+  padding: 10px 20px;
+  /* Overwrites hyperlink style for rest of webstie */
   font-weight: normal;
 }
-header ul li a:hover {
+.nav a:hover {
   background-color: var(--secondary-color);
   color: var(--primary-color);
-}
-a {
-  color: var(--secondary-color);
 }

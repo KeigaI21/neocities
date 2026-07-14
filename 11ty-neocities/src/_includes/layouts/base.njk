@@ -19,10 +19,8 @@
     {% endif %}
   </head>
   <body>
-    <header>{% include 'partials/nav.njk' %}</header>
+    <header class="nav">{% include 'partials/nav.njk' %}</header>
     {% block prebodycontent %}{% endblock %}
-    {% block body %}
-    <div class="center-box">{{ content | safe }}</div>
-    {% endblock %}
+    {{ content | safe }}
   </body>
 </html>

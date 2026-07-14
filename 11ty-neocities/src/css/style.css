@@ -63,12 +63,13 @@ ul {
   list-style: none;
 }
 a {
+  color: var(--secondary-color);
   font-weight: bold;
   text-decoration-line: none;
 }
 hr {
   border-style: solid;
-  width:80%;
+  width:50%;
   color: var(--secondary-color)
 }
 
@@ -77,10 +78,11 @@ hr {
   display: flex;
   margin: auto;
   box-sizing: border-box;
-  width: 60%;
+  width: 100%;
+  max-width: 80%;
   padding: 30px 80px;
   background-color: var(--primary-color);
-  border-style: none solid;
+  border-style: none;
   border-color: var(--secondary-color);
   border-width: 4px;
   text-align: center;

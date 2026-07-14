@@ -1,3 +1,4 @@
+/* Light/dark mode */
 if (localStorage.getItem("lightdarkmode") == null)
 {
     localStorage.setItem("lightdarkmode", "light")

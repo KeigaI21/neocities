@@ -1,8 +1,13 @@
 ---
 title: Keii Illustration - Homepage
-layout: layouts/homepage.njk
+layout: layouts/base.njk
+css: css/homepage.css
 scriptsdefer: js/lightdarkmodehomepage.js
 ---
-<img src="/images/homepageflower.webp" alt="A flower with a sun in the middle" id="light-mode-flower" style="display: none;" onclick="darkMode()">
-<img src="/images/homepageflowerdark.webp" alt="A flower with a moon in the middle" id="dark-mode-flower" style="display: none;" onclick="lightMode()">
-<h2>keii</h2>
+<div class="center-box">
+    <div class="center-box center-box-clone">
+        <img src="/images/homepageflower.webp" alt="A flower with a sun in the middle" id="light-mode-flower" style="display: none;" onclick="darkMode()">
+        <img src="/images/homepageflowerdark.webp" alt="A flower with a moon in the middle" id="dark-mode-flower" style="display: none;" onclick="lightMode()">
+        <h2>keii</h2>
+    </div>
+</div>

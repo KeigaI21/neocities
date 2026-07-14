@@ -19,6 +19,7 @@
 /* Clone of center box with reverse gradient for text color */
 .center-box-clone
 {
+  max-width: none;
   display: flex;
   position: relative;
   /* Subtract padding and border of center box */
