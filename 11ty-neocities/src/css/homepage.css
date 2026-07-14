@@ -4,10 +4,12 @@
   display: block;
   background-image: none;
   flex-grow: 0;
+  box-sizing: content-box;
 
 /* New settings */
   width: 500px;
-  height: 500px;
+  height: auto;
+  aspect-ratio: 1;
   background-image: linear-gradient(135deg, var(--secondary-color), var(--secondary-color-darkened) 50%, var(--primary-color) 50%);
   border-style: solid;
   border-width: 2px;
@@ -20,11 +22,11 @@
 .center-box-clone
 {
   max-width: none;
+  width: auto;
   display: flex;
   position: relative;
   /* Subtract padding and border of center box */
-  top: -2px;
-  left: -2px;
+
   color: transparent;
   background-image: linear-gradient(315deg, var(--secondary-color), var(--secondary-color) 50%, var(--primary-color) 50%);
   background-clip: text;
@@ -60,12 +62,16 @@
   animation-duration: 5s;
   animation-iteration-count: infinite;
 }
-
 .center-box-clone img {
   cursor: pointer;
   z-index: 1;
-  /* resize to inside border */
-  width: calc(100% - 4px);
-  height: calc(100% - 4px);
 }
-
+/* For phone screens */
+@media screen and (max-width: 500px) {
+  .center-box {
+    width: 400px;
+  }
+  .center-box-clone h2 {
+    font-size: 400px;
+  }
+}

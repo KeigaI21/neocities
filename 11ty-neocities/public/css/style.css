@@ -78,8 +78,7 @@ hr {
   display: flex;
   margin: auto;
   box-sizing: border-box;
-  width: 100%;
-  max-width: 80%;
+  width: 60%;
   padding: 30px 80px;
   background-color: var(--primary-color);
   border-style: none;
