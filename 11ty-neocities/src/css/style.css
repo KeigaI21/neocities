@@ -78,8 +78,8 @@ hr {
   display: flex;
   margin: auto;
   box-sizing: border-box;
-  width: 60%;
-  padding: 30px 80px;
+  width: 100%;
+  padding: 3vh 8vw;
   background-color: var(--primary-color);
   border-style: none;
   border-color: var(--secondary-color);
