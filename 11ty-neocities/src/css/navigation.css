@@ -13,6 +13,7 @@
   box-sizing: border-box;
   border-color: var(--secondary-color);
   background-color: transparent;
+  font-family: funnel;
   font-size: 18px;
 }
 .nav span {
@@ -46,7 +47,6 @@
 .nav a:hover .icon {
   background-color: var(--primary-color);
 }
-/* Color icon using website theme colors */
 .icon {
   aspect-ratio: 1;
   width: auto;

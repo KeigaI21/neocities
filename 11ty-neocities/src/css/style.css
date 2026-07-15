@@ -20,18 +20,24 @@
   font-family: nunito;
   src: url("/fonts/Nunito.ttf");
 }
-* {
-  font-family: playfair;
-  letter-spacing: 1px;
-  line-height: 1.6;
+@font-face {
+  font-family: commissioner;
+  src: url("/fonts/Commissioner.ttf");
 }
+@font-face {
+  font-family: funnel;
+  src: url("/fonts/FunnelDisplay.ttf");
+}
+
 .clickable {
   cursor: pointer;
 }
-
 /* Font adjustments */
 p, ul, li, a {
-  letter-spacing: normal;
+  letter-spacing: 1.5px;
+}
+h1, h2 {
+  letter-spacing: 2.5px;;
 }
 
 /* Box resets */
@@ -39,7 +45,6 @@ body, h1, h2, header, p, ul, pre, a{
   margin: 0;
   padding: 0;
 }
-
 body {
   cursor: default;
   background-color: var(--primary-color);
@@ -50,6 +55,8 @@ body {
   flex-direction: column;
   height: 100vh;
   background-attachment: fixed;
+  font-family: funnel;
+  line-height: 1.6;
 }
 img {
   width: 1000px;
@@ -91,7 +98,7 @@ hr {
   flex-direction: column;
   align-items: center;
 }
-/* Image with colors replace by theme colors */
+/* Image with colors replaced by theme colors */
 .themed-image {
   background-color: var(--secondary-color);
   mask-mode: alpha;
