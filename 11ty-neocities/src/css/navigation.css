@@ -1,38 +1,76 @@
 /* Top navigation bar */
 .nav {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
+  flex-direction: column;
+  align-items: start;
+  height: auto;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
   border-color: var(--secondary-color);
-  background-color: var(--primary-color);
+  background-color: transparent;
   font-size: 18px;
 }
 .nav span {
   display: flex;
-  flex-direction: row;
-  flex-shrink: 1;
+}
+/* Button details hidden when not hovered */
+.nav .expanding-button {
+  display: none;
+  padding: 0 0 0 20px;
+}
+/* Hovering over button displays its details */
+.nav:hover a > .expanding-button {
+  display: flex;
 }
 .nav a {
-  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px 15px;
+
   /* Overwrites hyperlink style for rest of webstie */
   font-weight: normal;
   text-wrap: nowrap;
 }
+/* When navigation button is hovered, change color and icon */
 .nav a:hover {
+  width: 100%;
   background-color: var(--secondary-color);
   color: var(--primary-color);
 }
+.nav a:hover .icon {
+  background-color: var(--primary-color);
+}
+/* Color icon using website theme colors */
+.icon {
+  aspect-ratio: 1;
+  width: auto;
+  height: 32px;
+  background-color: var(--secondary-color);
+  mask-mode: alpha;
+  mask-size: cover;
+}
 /* For phone screens */
+@media (any-hover: none) {
+  .nav {
+    position: absolute;
+  }
+  .nav .expanding-button {
+    display: flex;
+  }
+}
 @media screen and (max-width: 500px) {
   .nav a {
     padding: 10px 10px;
     font-weight: normal;
     font-size: 14px;
+  }
+  .icon {
+    height: 24px;
   }
 }

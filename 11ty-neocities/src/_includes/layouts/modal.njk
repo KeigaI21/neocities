@@ -1,8 +1,19 @@
----
-css: /css/modal.css
-scriptsdefer: /js/imagepopup.js
----
 {% extends "layouts/base.njk" %}
+
+{% block css_template %}
+{{ super() }}
+<link rel="stylesheet" href="/css/modal.css">
+{% endblock %}
+
+{% block scripts_template %}
+{{ super() }}
+{% endblock %}
+
+{% block scriptsdefer_template %}
+{{ super() }}
+<script src="/js/imagepopup.js" defer></script>
+{% endblock %}
+
 {% block prebodycontent %}
 <!-- Pop up image box, see modal.css and imagepopup.js -->
 <div id="my-modal" class="modal">

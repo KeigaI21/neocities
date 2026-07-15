@@ -6,14 +6,18 @@
     <title>{{ title }}</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/navigation.css">
+    {% block css_template %}{% endblock %}
     {% if css %}
-      <link href="{{ css }}" rel="stylesheet">
+    <link rel="stylesheet" href="{{ css }}">
     {% endif %}
+
     <script src="/js/usersettings.js"></script>
     <script src="/js/lightdarkmodegeneral.js"></script>
+    {% block scripts_template %}{% endblock %}
     {% if scripts %}
       <script src="{{ scripts }}"></script>
     {% endif %}
+    {% block scriptsdefer_template %}{% endblock %}
     {% if scriptsdefer %}
       <script src="{{ scriptsdefer }}" defer></script>
     {% endif %}
