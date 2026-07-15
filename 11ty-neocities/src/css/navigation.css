@@ -58,7 +58,7 @@
 /* For phone screens */
 @media (any-hover: none) {
   .nav {
-    position: absolute;
+    position: static;
   }
   .nav .expanding-button {
     display: flex;
