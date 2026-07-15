@@ -4,11 +4,13 @@
   --primary-color: white;
   --secondary-color: rgb(24, 35, 255);
   --secondary-color-darkened: rgb(11, 19, 182);
+  --image-card-bottom-color: rgb(199, 209, 255);
 }
 .dark-mode {
   --primary-color: rgb(34, 28, 44);
   --secondary-color: rgb(245, 240, 218);
   --secondary-color-darkened: rgb(79, 63, 97);
+  --image-card-bottom-color: rgb(72, 61, 85);
 }
 @font-face {
   font-family: playfair;
@@ -89,6 +91,9 @@ hr {
   flex-direction: column;
   align-items: center;
 }
-.vert-img {
-  width: 550px;
+/* Image with colors replace by theme colors */
+.themed-image {
+  background-color: var(--secondary-color);
+  mask-mode: alpha;
+  mask-size: cover;
 }

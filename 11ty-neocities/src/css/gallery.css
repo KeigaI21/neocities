@@ -5,10 +5,17 @@
     height: auto;
     max-width: 100%;
     padding: 20px 50px;
+    background-image: linear-gradient(to bottom, var(--primary-color) 50%, var(--image-card-bottom-color));
     border-style: solid;
-    border-width: 10px;
+    border-width: 1px;
     border-color: var(--secondary-color);
 }
 .image-card img {
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--image-card-bottom-color);
     width: auto;
+}
+.vert-img {
+    width: 550px;
 }

@@ -51,9 +51,6 @@
   aspect-ratio: 1;
   width: auto;
   height: 32px;
-  background-color: var(--secondary-color);
-  mask-mode: alpha;
-  mask-size: cover;
 }
 /* For phone screens */
 @media (any-hover: none) {
