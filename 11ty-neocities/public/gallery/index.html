@@ -25,9 +25,12 @@
 <script src="/js/imagepopup.js" defer></script>
 
     
+      <script src="/js/gallerycards.js" defer></script>
+    
   </head>
   <body>
-    <header class="nav">
+    <header class="nav"><script src="/js/showhidenav.js" defer></script>
+<span class="link-buttons">
 <a href="/">
     <span class="icon themed-image" style="mask-image: url(/images/homeicon.png);"></span>
     <span class="expanding-button"> HOME </span>
@@ -43,7 +46,15 @@
 <a href="/aboutme/">
     <span class="icon themed-image" style="mask-image: url(/images/aboutmeicon.png);"></span>
     <span class="expanding-button"> ABOUT ME
-</a></header>
+</a>
+</span>
+<span class="show-hide-button" id="show-button">
+    <span class="icon themed-image" style="mask-image: url(/images/showicon.png);" onclick="showNav()"></span>
+</span>
+<span class="show-hide-button" id="hide-button">
+    <span class="icon themed-image" style="mask-image: url(/images/hideicon.png);" onclick="hideNav()"></span>
+</span>
+</header>
     
 <!-- Pop up image box, see modal.css and imagepopup.js -->
 <div id="my-modal" class="modal">
@@ -56,19 +67,20 @@
     <hr>
     <br>
     <div class="image-card">
-        <p>Syzygy</p>
+        <p><span style="font-size: 15px;">01 </span><span style="font-size: 11px;"">/</span> Syzygy</p>
         <img class="clickable" src="/images/syzygy.webp" alt="An artwork titled syzygy. It depicts a woman in a white dress who controls a silver substance to create weapons." onclick="popUp(this)">
     </div>
-    <br> 
-    <div class="image-card vert-img">
-        <p>Agent of Hermes</p>
+    <div class="image-card" style="display: none;">
+        <p><span style="font-size: 15px;">02 </span><span style="font-size: 11px;"">/</span> Agent of Hermes</p>
         <img class="clickable" src="/images/hermes.webp" alt="An agent of Hermes on a mission in the underworld." onclick="popUp(this)">
     </div>
-    <br>
-    <div class="image-card">
-        <p>Lightyears</p>
+    <div class="image-card" style="display: none;">
+        <p><span style="font-size: 15px;">03 </span><span style="font-size: 11px;"">/</span> Lightyears</p>
         <img class="clickable" src="/images/lightyears.webp" alt="An artwork titled lightyears. It depicts an giant stone eye with stars in its pupil. Underneath is a lonely lady with clouds, rockets, and a radar in the background." onclick="popUp(this)">
     </div>
+    <!-- Image card navigation buttons -->
+    <br>
+    <div style="position: absolute; bottom: 30px"> <span onclick="previousImage()">&lt;</span> <span onclick="nextImage()">&gt;</span> </div>
 </div>
   </body>
 </html>

@@ -1,8 +1,8 @@
 .image-card {
     display: flex;
     flex-direction: column;
-    width: 800px;
-    height: auto;
+    width: auto;
+    max-height: 75vh;
     max-width: 100%;
     padding: 10px 20px;
     background-image: linear-gradient(to bottom, var(--primary-color) 50%, var(--image-card-bottom-color));
@@ -20,7 +20,5 @@
     border-width: 1px;
     border-color: var(--image-card-bottom-color);
     width: auto;
-}
-.vert-img {
-    width: 550px;
+    max-height: 100%;
 }

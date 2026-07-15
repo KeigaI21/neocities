@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   align-items: start;
+  width: fit-content;
   height: auto;
   padding: 0;
   margin: 0;
@@ -15,6 +16,9 @@
   background-color: transparent;
   font-family: funnel;
   font-size: 18px;
+}
+.link-buttons {
+    flex-direction: column;
 }
 .nav span {
   display: flex;
@@ -25,10 +29,11 @@
   padding: 0 0 0 20px;
 }
 /* Hovering over button displays its details */
-.nav:hover a > .expanding-button {
+.nav .link-buttons:hover a > .expanding-button {
   display: flex;
 }
 .nav a {
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -37,6 +42,13 @@
   /* Overwrites hyperlink style for rest of webstie */
   font-weight: normal;
   text-wrap: nowrap;
+}
+.show-hide-button.show-hide-button {
+  display: none;
+  align-items: center;
+  flex-direction: row;
+  padding: 10px 15px;
+  background-clip: content-box;
 }
 /* When navigation button is hovered, change color and icon */
 .nav a:hover {
@@ -52,20 +64,25 @@
   width: auto;
   height: 32px;
 }
-/* For phone screens */
+.nav .showing {
+  display: flex;
+}
+/* For touch screens */
 @media (any-hover: none) {
-  .nav {
-    position: static;
-  }
-  .nav .expanding-button {
+  #show-button {
     display: flex;
   }
 }
+/* For tall screens */
 @media screen and (max-width: 500px) {
-  .nav a {
+  .nav a, .nav .show-hide-button{
     padding: 10px 10px;
     font-weight: normal;
     font-size: 14px;
+  }
+  .nav:hover {
+    background-color: var(--primary-color);
+    border-style: none solid solid none;
   }
   .icon {
     height: 24px;

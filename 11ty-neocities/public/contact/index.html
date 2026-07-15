@@ -17,7 +17,8 @@
     
   </head>
   <body>
-    <header class="nav">
+    <header class="nav"><script src="/js/showhidenav.js" defer></script>
+<span class="link-buttons">
 <a href="/">
     <span class="icon themed-image" style="mask-image: url(/images/homeicon.png);"></span>
     <span class="expanding-button"> HOME </span>
@@ -33,18 +34,27 @@
 <a href="/aboutme/">
     <span class="icon themed-image" style="mask-image: url(/images/aboutmeicon.png);"></span>
     <span class="expanding-button"> ABOUT ME
-</a></header>
+</a>
+</span>
+<span class="show-hide-button" id="show-button">
+    <span class="icon themed-image" style="mask-image: url(/images/showicon.png);" onclick="showNav()"></span>
+</span>
+<span class="show-hide-button" id="hide-button">
+    <span class="icon themed-image" style="mask-image: url(/images/hideicon.png);" onclick="hideNav()"></span>
+</span>
+</header>
     
     <div class="center-box"">
     <h1>Contact</h1>
     <hr>
     <br>
-    <p>Let's work together!</p>
-    <p>Send me an email at <a href=mailto:keigaishibashi.art@gmail.com>keigaishibashi.art@gmail.com</a></p>
-    <p>Or shoot me a DM on Instagram <a href="https://www.instagram.com/keii_illust/">@keii_illust</a></p>
+    <p>Here's where you can contact me for work or just to say hi!</p>
+    <p>I am open for commissions and projects at this time. Reach out for a quote!</p>
+    <p>Email: <a href=mailto:keigaishibashi.art@gmail.com>keigaishibashi.art@gmail.com</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/keii_illust/">@keii_illust</a></p>
     <br>
     <!-- Aspect ratio of container for themed images must match image -->
-    <span class="themed-image" style="mask-image: url(/images/analemma.webp); aspect-ratio: 26 / 17; width: 600px; height: auto"></span>
+    <span class="themed-image" style="mask-image: url(/images/analemma.webp); aspect-ratio: 26 / 17; width: 600px; height: auto;"></span>
 </div>
   </body>
 </html>
