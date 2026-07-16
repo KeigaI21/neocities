@@ -1,5 +1,8 @@
 const imageCards = document.getElementsByClassName("image-card");
 var currentCard = 0;
+imageCards[currentCard].classList.add("current-card");
+imageCards[currentCard + 1].classList.add("next-card");
+imageCards[imageCards.length - 1].classList.add("previous-card");
 function nextImage() {
     /* Ensures cards loop back to start */
     var nextCard = (currentCard + 1) % imageCards.length;

@@ -15,10 +15,17 @@
     text-align: left;
 }
 .image-card img {
-    margin: 2% 5%;
+    margin: 2% 5% 1%;
     border-style: solid;
     border-width: 1px;
     border-color: var(--image-card-bottom-color);
     width: auto;
-    max-height: 100%;
+    max-height: 97%;
+}
+.image-card .vert-img {
+    max-height: 99%;
+}
+.image-card .caption {
+    font-size: 16px;
+    text-align: right;
 }
