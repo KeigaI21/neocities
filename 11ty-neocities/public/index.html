@@ -21,30 +21,42 @@
     
   </head>
   <body>
+    <svg width="0" height="0">
+    <defs>
+        <filter id="fill-secondary-color">
+            <feFlood flood-color="var(--secondary-color)" result="flood"></feFlood>
+            <feComposite in="flood", in2="SourceGraphic" operator="in"></feComposite>
+        </filter>
+        <filter id="fill-primary-color">
+            <feFlood flood-color="var(--primary-color)" result="flood"></feFlood>
+            <feComposite in="flood", in2="SourceGraphic" operator="in"></feComposite>
+        </filter>
+    </defs>
+</svg>
     <header class="nav"><script src="/js/showhidenav.js" defer></script>
 <span class="link-buttons">
 <a href="/">
-    <span class="icon themed-image" style="mask-image: url(/images/homeicon.png);"></span>
+    <img src="/images/homeicon.png" class="icon">
     <span class="expanding-button"> HOME </span>
 </a>
 <a href="/gallery/">
-    <span class="icon themed-image" style="mask-image: url(/images/galleryicon.png);"></span>
+    <img src="/images/galleryicon.png" class="icon">
     <span class="expanding-button"> GALLERY </span>
 </a>
 <a href="/contact/">
-    <span class="icon themed-image" style="mask-image: url(/images/contacticon.png);"></span>
+    <img src="/images/contacticon.png" class="icon">
     <span class="expanding-button"> CONTACT </span>
 </a>
 <a href="/aboutme/">
-    <span class="icon themed-image" style="mask-image: url(/images/aboutmeicon.png);"></span>
+    <img src="/images/aboutmeicon.png" class="icon">
     <span class="expanding-button"> ABOUT ME </span>
 </a>
 </span>
 <span class="show-hide-button" id="show-button">
-    <span class="icon themed-image" style="mask-image: url(/images/showicon.png);" onclick="showNav()"></span>
+    <img src="/images/showicon.png" class="icon" onclick="showNav()">
 </span>
 <span class="show-hide-button" id="hide-button">
-    <span class="icon themed-image" style="mask-image: url(/images/hideicon.png);" onclick="hideNav()"></span>
+    <img src="/images/hideicon.png" class="icon" onclick="hideNav()">
 </span>
 </header>
     

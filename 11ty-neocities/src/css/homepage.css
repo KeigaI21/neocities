@@ -25,8 +25,6 @@
   width: auto;
   display: flex;
   position: relative;
-  /* Subtract padding and border of center box */
-
   color: transparent;
   background-image: linear-gradient(315deg, var(--secondary-color), var(--secondary-color) 50%, var(--primary-color) 50%);
   background-clip: text;
@@ -39,7 +37,7 @@
 .center-box-clone a {
   color: transparent;
 }
-/* Animated text */
+/* For Animated text */
 @keyframes moving-text {
   0% {
     right: -180%;
@@ -62,10 +60,14 @@
   animation-duration: 5s;
   animation-iteration-count: infinite;
 }
+/* Boxed image formatting */
 .center-box-clone img {
+  width: 100%;
+  height: auto;
   cursor: pointer;
   z-index: 1;
 }
+
 /* For phone screens */
 @media screen and (max-width: 500px) {
   .center-box {

@@ -57,7 +57,7 @@
   color: var(--primary-color);
 }
 .nav a:hover .icon {
-  background-color: var(--primary-color);
+  filter: url(#fill-primary-color);
 }
 
 .nav .showing {

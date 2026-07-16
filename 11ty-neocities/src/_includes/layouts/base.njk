@@ -23,6 +23,7 @@
     {% endif %}
   </head>
   <body>
+    {% include 'partials/svgfilters.njk' %}
     <header class="nav">{% include 'partials/nav.njk' %}</header>
     {% block prebodycontent %}{% endblock %}
     {{ content | safe }}
