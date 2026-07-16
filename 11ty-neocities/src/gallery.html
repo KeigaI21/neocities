@@ -22,5 +22,8 @@ css: /css/gallery.css
     </div>
     <!-- Image card navigation buttons -->
     <br>
-    <div style="position: absolute; bottom: 30px"> <span onclick="previousImage()">&lt;</span> <span onclick="nextImage()">&gt;</span> </div>
+    <div style="position: absolute; bottom: 30px; width: 64px; height: 32px; display: flex; align-items: row;">
+        <div class="icon themed-image clickable" style="mask-image: url(/images/hideicon.png);" onclick="previousImage()"></div>
+        <div class="icon themed-image clickable" style="mask-image: url(/images/showicon.png);" onclick="nextImage()"></div>
+    </div>
 </div>

@@ -104,3 +104,8 @@ hr {
   mask-mode: alpha;
   mask-size: cover;
 }
+.icon {
+  aspect-ratio: 1;
+  width: auto;
+  height: 32px;
+}

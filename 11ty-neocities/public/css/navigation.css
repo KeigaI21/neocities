@@ -59,11 +59,7 @@
 .nav a:hover .icon {
   background-color: var(--primary-color);
 }
-.icon {
-  aspect-ratio: 1;
-  width: auto;
-  height: 32px;
-}
+
 .nav .showing {
   display: flex;
 }
