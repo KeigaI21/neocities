@@ -104,6 +104,7 @@ hr {
   mask-mode: alpha;
   mask-size: cover;
 }
+/* Icon sizing for use with themed image */
 .icon {
   aspect-ratio: 1;
   width: auto;
