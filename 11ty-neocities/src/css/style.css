@@ -121,7 +121,7 @@ hr {
   height: auto;
 }
 /* For mobile devices */
-@media (hover: none) {
+@media (any-hover: none) {
   .animated-background {
     display: none;
   }
