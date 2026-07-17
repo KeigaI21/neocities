@@ -121,8 +121,8 @@ hr {
   height: auto;
 }
 /* For mobile devices */
-@media (pointer: coarse) {
-.animated-background {
-  display: none;
-}
+@media (any-pointer: coarse) {
+  .animated-background {
+    display: none;
+  }
 }
