@@ -122,7 +122,14 @@ hr {
 }
 /* For mobile devices */
 @media (any-hover: none) {
+  .icon {
+    display: none;
+  }
+  :root {
+      --primary-color: rgb(205, 255, 200);
+  }
   .animated-background {
     display: none;
+
   }
 }
