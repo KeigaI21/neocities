@@ -29,3 +29,21 @@
     font-size: 16px;
     text-align: right;
 }
+.image-nav-buttons {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    align-items: row;
+}
+.image-nav-buttons .icon {
+    filter: url(#fill-primary-color-bottom);
+}
+/* For mobile devices */
+@media (pointer: coarse) {
+    :root {
+      --primary-color-bottom: var(--secondary-color);
+    }
+    .dark-mode {
+      --primary-color-bottom: var(--secondary-color);
+    }
+}

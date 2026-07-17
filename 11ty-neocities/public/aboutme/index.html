@@ -28,6 +28,10 @@
             <feFlood flood-color="var(--primary-color)" result="floodpri"></feFlood>
             <feComposite in="floodpri", in2="SourceGraphic" operator="in"></feComposite>
         </filter>
+        <filter id="fill-primary-color-bottom">
+            <feFlood flood-color="var(--primary-color-bottom)" result="floodpri"></feFlood>
+            <feComposite in="floodpri", in2="SourceGraphic" operator="in"></feComposite>
+        </filter>
         <filter id="fill-socials-color">
             <feFlood flood-color="var(--socials-color)" result="floodsoc"></feFlood>
             <feComposite in="floodsoc", in2="SourceGraphic" operator="in"></feComposite>
