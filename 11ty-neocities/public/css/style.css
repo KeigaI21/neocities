@@ -7,6 +7,7 @@
   --image-card-bottom-color: rgb(191, 201, 255);
   --background-bottom-color: rgb(32, 56, 161);
   --tertiary-color: rgb(212, 238, 250);
+  --socials-color: white;
 }
 .dark-mode {
   --primary-color: rgb(34, 28, 44);
@@ -15,6 +16,7 @@
   --image-card-bottom-color: rgb(81, 70, 97);
   --background-bottom-color: rgb(221, 188, 230);
   --tertiary-color: rgb(62, 47, 73);
+  --socials-color: white;
 }
 @font-face {
   font-family: playfair;
@@ -120,10 +122,37 @@ hr {
   max-width: 80%;
   height: auto;
 }
+.footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+.footer p {
+  letter-spacing: 0.5px;
+}
+.socials {
+  flex-direction: row;
+}
+.socialsicon {
+  margin: 0 5px;
+  aspect-ratio: 1;
+  width: auto;
+  height: 32px;
+}
+.footer {
+  filter: url(#fill-socials-color)
+}
 /* For mobile devices */
 @media (pointer: coarse) {
   .animated-background {
     display: none;
-
+  }
+  :root {
+    --socials-color: black;
+  }
+  .dark-mode {
+    --socials-color: white;
   }
 }

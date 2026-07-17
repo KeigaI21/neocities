@@ -29,5 +29,6 @@
     <header class="nav">{% include 'partials/nav.njk' %}</header>
     {% block prebodycontent %}{% endblock %}
     {{ content | safe }}
+    {% include 'partials/footer.njk' %}
   </body>
 </html>

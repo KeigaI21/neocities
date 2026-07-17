@@ -21,12 +21,16 @@
     <svg width="0" height="0">
     <defs>
         <filter id="fill-secondary-color">
-            <feFlood flood-color="var(--secondary-color)" result="flood"></feFlood>
-            <feComposite in="flood", in2="SourceGraphic" operator="in"></feComposite>
+            <feFlood flood-color="var(--secondary-color)" result="floodsec"></feFlood>
+            <feComposite in="floodsec", in2="SourceGraphic" operator="in"></feComposite>
         </filter>
         <filter id="fill-primary-color">
-            <feFlood flood-color="var(--primary-color)" result="flood"></feFlood>
-            <feComposite in="flood", in2="SourceGraphic" operator="in"></feComposite>
+            <feFlood flood-color="var(--primary-color)" result="floodpri"></feFlood>
+            <feComposite in="floodpri", in2="SourceGraphic" operator="in"></feComposite>
+        </filter>
+        <filter id="fill-socials-color">
+            <feFlood flood-color="var(--socials-color)" result="floodsoc"></feFlood>
+            <feComposite in="floodsoc", in2="SourceGraphic" operator="in"></feComposite>
         </filter>
         <!-- Turblence > Matrix to reduce transparencies > Animated hue rotate for wave like motion > Map image onto result as displacement map -->  
         <filter id="space2">
@@ -81,6 +85,10 @@
     <br>
     <!-- Aspect ratio of container for themed images must match image -->
     <img src="/images/analemma.webp" class="aux-image" style="filter: url(#fill-secondary-color);"></span>
+</div>
+    <div class="footer">
+    <span class="socials"><img src="/images/github.svg" class="socialsicon"><img src="/images/instagram.svg" class="socialsicon"></span>
+    <p>&copy; 2026 Keiga Ishibashi</p>
 </div>
   </body>
 </html>
