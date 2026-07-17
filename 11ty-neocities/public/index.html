@@ -15,6 +15,7 @@
     <script src="/js/lightdarkmodegeneral.js"></script>
     
     
+
     
     
       <script src="js/lightdarkmodehomepage.js" defer></script>
@@ -31,8 +32,21 @@
             <feFlood flood-color="var(--primary-color)" result="flood"></feFlood>
             <feComposite in="flood", in2="SourceGraphic" operator="in"></feComposite>
         </filter>
+        <!-- Turblence > Matrix to reduce transparencies > Animated hue rotate for wave like motion > Map image onto result as displacement map -->  
+        <filter id="space2">
+			<feTurbulence type="turbulence" baseFrequency=".0035 .012" numOctaves="1" seed="2" stitchTiles="stitch" result="turb"></feTurbulence>
+			<feColorMatrix in="turb" type="matrix" values="1   0   0   0   0  
+			                                               0   01  0   0   0  
+			                                               0   0   01  0   0  
+			                                               0.7 0.7 0   01  1" result="turbmat"></feColorMatrix>
+            <feColorMatrix in="turbmat" type="hueRotate" values="0" result="hueturb">
+                <animate attributeName="values" from="0" to="360" dur="2s" repeatCount="indefinite"></animate>
+            </feColorMatrix>
+			<feDisplacementMap in="SourceGraphic" in2="hueturb" scale="200" xChannelSelector="R" yChannelSelector="G"></feDisplacementMap>
+		</filter>
     </defs>
 </svg>
+    <div class="animated-background"></div>
     <header class="nav"><script src="/js/showhidenav.js" defer></script>
 <span class="link-buttons">
 <a href="/">

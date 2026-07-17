@@ -4,13 +4,17 @@
   --primary-color: white;
   --secondary-color: rgb(24, 35, 255);
   --secondary-color-darkened: rgb(11, 19, 182);
-  --image-card-bottom-color: rgb(199, 209, 255);
+  --image-card-bottom-color: rgb(191, 201, 255);
+  --background-bottom-color: rgb(32, 56, 161);
+  --tertiary-color: rgb(212, 238, 250);
 }
 .dark-mode {
   --primary-color: rgb(34, 28, 44);
   --secondary-color: rgb(245, 240, 218);
   --secondary-color-darkened: rgb(79, 63, 97);
-  --image-card-bottom-color: rgb(72, 61, 85);
+  --image-card-bottom-color: rgb(81, 70, 97);
+  --background-bottom-color: rgb(221, 188, 230);
+  --tertiary-color: rgb(62, 47, 73);
 }
 @font-face {
   font-family: playfair;
@@ -44,15 +48,14 @@ body, h1, h2, header, p, ul, pre, a, img{
 body {
   cursor: default;
   background-color: var(--primary-color);
-  background-blend-mode: overlay;
   background-size: contain;
   color: var(--secondary-color);
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background-attachment: fixed;
   font-family: funnel;
   line-height: 1.6;
+  overflow: hidden;
 }
 h2 {
   font-size: 20px;
@@ -71,7 +74,20 @@ hr {
   width: 50%;
   color: var(--secondary-color)
 }
-
+.background-animation-canvas {
+  filter: url(#space);
+  position: absolute;
+  z-index: -1;
+}
+.animated-background {
+  position: absolute;
+  left: -10%;
+  width: 120%;
+  height: 110%;
+  background-image: linear-gradient(to top, var(--background-bottom-color), var(--tertiary-color) 40%, var(--primary-color) 50%);
+  z-index: -2;
+  filter: url(#space2);
+}
 /* Middle section of every page, where all the content resides */
 .center-box {
   display: flex;
@@ -79,7 +95,7 @@ hr {
   box-sizing: border-box;
   width: 100%;
   padding: 3vh 8vw;
-  background-color: var(--primary-color);
+  background-color: transparent;
   border-style: none;
   border-color: var(--secondary-color);
   border-width: 4px;

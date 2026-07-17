@@ -32,6 +32,7 @@
   margin: auto;
   justify-content: center;
   overflow: hidden;
+
 }
 /* Override hyperlink stylization to match color gradient */
 .center-box-clone a {

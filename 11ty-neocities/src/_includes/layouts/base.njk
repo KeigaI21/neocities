@@ -17,6 +17,7 @@
     {% if scripts %}
       <script src="{{ scripts }}"></script>
     {% endif %}
+
     {% block scriptsdefer_template %}{% endblock %}
     {% if scriptsdefer %}
       <script src="{{ scriptsdefer }}" defer></script>
@@ -24,6 +25,7 @@
   </head>
   <body>
     {% include 'partials/svgfilters.njk' %}
+    <div class="animated-background"></div>
     <header class="nav">{% include 'partials/nav.njk' %}</header>
     {% block prebodycontent %}{% endblock %}
     {{ content | safe }}
