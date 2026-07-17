@@ -38,6 +38,15 @@
 .image-nav-buttons .icon {
     filter: url(#fill-primary-color-bottom);
 }
+/* For tall screens */
+@media screen and (max-width: 500px) {
+    .image-card .caption {
+        font-size: 14px;
+    }
+    .image-card {
+        max-width: 88%;
+    }
+}
 /* For mobile devices */
 @media (pointer: coarse) {
     :root {
