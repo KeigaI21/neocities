@@ -121,13 +121,7 @@ hr {
   height: auto;
 }
 /* For mobile devices */
-@media (any-hover: none) {
-  .icon {
-    display: none;
-  }
-  :root {
-      --primary-color: rgb(205, 255, 200);
-  }
+@media (pointer: coarse) {
   .animated-background {
     display: none;
 
