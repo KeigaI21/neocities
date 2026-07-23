@@ -1,4 +1,8 @@
 /* Middle section of every page, where all the content resides */
+body {
+  align-items: center;
+  
+}
 .center-box {
 /* Resets from original */
   display: flex;
@@ -41,9 +45,9 @@
 /* For Animated text */
 @keyframes moving-text {
   0% {
-    right: -180%;
+    right: -420%;
   }
-  75% {
+  50% {
     right: 120%;
   }
   100% {
@@ -58,7 +62,7 @@
   position: absolute;
   animation-name: moving-text;
   animation-timing-function: linear;
-  animation-duration: 5s;
+  animation-duration: 9s;
   animation-iteration-count: infinite;
 }
 /* Boxed image formatting */

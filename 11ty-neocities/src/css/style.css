@@ -61,6 +61,7 @@ body {
   font-family: funnel;
   line-height: 1.6;
   overflow: hidden;
+  justify-content: center;
 }
 h2 {
   font-size: 20px;
@@ -96,7 +97,6 @@ hr {
 /* Middle section of every page, where all the content resides */
 .center-box {
   display: flex;
-  margin: auto;
   box-sizing: border-box;
   width: 100%;
   padding: 3vh 8vw;
