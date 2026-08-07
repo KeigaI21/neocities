@@ -1,25 +1,29 @@
 <script src="/js/showhidenav.js" defer></script>
 <span class="link-buttons">
-<a href="/">
-    <img src="/images/homeicon.png" class="icon">
-    <span class="expanding-button"> HOME </span>
-</a>
-<a href="/gallery/">
-    <img src="/images/galleryicon.png" class="icon">
-    <span class="expanding-button"> GALLERY </span>
-</a>
-<a href="/contact/">
-    <img src="/images/contacticon.png" class="icon">
-    <span class="expanding-button"> CONTACT </span>
-</a>
-<a href="/aboutme/">
-    <img src="/images/aboutmeicon.png" class="icon">
-    <span class="expanding-button"> ABOUT ME </span>
-</a>
+    <a href="/">
+        <img src="/images/homeicon.png" class="icon">
+        <span class="nav-button-text"> HOME </span>
+    </a>
 </span>
-<span class="show-hide-button" id="show-button">
-    <img src="/images/showicon.png" class="icon" onclick="showNav()">
-</span>
-<span class="show-hide-button" id="hide-button">
-    <img src="/images/hideicon.png" class="icon" onclick="hideNav()">
+<span class="link-buttons">
+    <span class="nav-hamburger" onclick="showNav()">
+        <img src="/images/hamburger.png" class="icon">
+    </span>
+    <span class="nav-close" onclick="hideNav()">
+        <img src="/images/close.png" class="icon">
+    </span>
+    <span class="link-buttons nav-popup">
+        <a class="expanding-button" href="/gallery/">
+            <img src="/images/galleryicon.png" class="icon">
+            <span class="nav-button-text"> GALLERY </span>
+        </a>
+        <a class="expanding-button" href="/contact/">
+            <img src="/images/contacticon.png" class="icon">
+            <span class="nav-button-text"> CONTACT </span>
+        </a>
+        <a class="expanding-button" href="/aboutme/">
+            <img src="/images/aboutmeicon.png" class="icon">
+            <span class="nav-button-text"> ABOUT ME </span>
+        </a>
+    </span>
 </span>

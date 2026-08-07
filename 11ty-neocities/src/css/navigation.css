@@ -5,9 +5,9 @@
   top: 0;
   left: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: start;
-  width: fit-content;
+  width: 100%;
   height: auto;
   padding: 0;
   margin: 0;
@@ -16,21 +16,16 @@
   background-color: transparent;
   font-family: funnel;
   font-size: 18px;
+  justify-content: space-between
 }
 .link-buttons {
-    flex-direction: column;
+  flex-direction: row;
 }
 .nav span {
   display: flex;
 }
-/* Button details hidden when not hovered */
-.nav .expanding-button {
-  display: none;
+.nav-button-text {
   padding: 0 0 0 20px;
-}
-/* Hovering over button displays its details */
-.nav .link-buttons:hover a > .expanding-button {
-  display: flex;
 }
 .nav a {
   box-sizing: border-box;
@@ -43,13 +38,6 @@
   font-weight: normal;
   text-wrap: nowrap;
 }
-.show-hide-button.show-hide-button {
-  display: none;
-  align-items: center;
-  flex-direction: row;
-  padding: 10px 15px;
-  background-clip: content-box;
-}
 /* When navigation button is hovered, change color and icon */
 .nav a:hover {
   width: 100%;
@@ -59,26 +47,24 @@
 .nav a:hover .icon {
   filter: url(#fill-primary-color);
 }
-
-.nav .showing {
-  display: flex;
+.nav .nav-hamburger {
+  display: none;
+  padding: 10px 15px;
+  justify-content: right;
+}
+.nav .nav-close {
+  padding: 10px 15px;
+  display: none;
+  justify-content: right;
 }
 /* For touch screens */
 @media (any-hover: none) {
-  #show-button {
-    display: flex;
-  }
+
 }
 /* For tall screens */
-@media screen and (max-width: 500px) {
-  .nav a, .nav .show-hide-button{
-    padding: 10px 10px;
-    font-weight: normal;
-    font-size: 14px;
-  }
-  .nav:hover {
-    background-color: var(--primary-color);
-    border-style: none solid solid none;
+@media screen and (max-width: 600px) {
+  .link-buttons {
+    flex-direction: column;
   }
   .icon {
     height: 24px;

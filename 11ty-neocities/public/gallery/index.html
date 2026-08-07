@@ -65,30 +65,33 @@
     <div class="animated-background"></div>
     <header class="nav"><script src="/js/showhidenav.js" defer></script>
 <span class="link-buttons">
-<a href="/">
-    <img src="/images/homeicon.png" class="icon">
-    <span class="expanding-button"> HOME </span>
-</a>
-<a href="/gallery/">
-    <img src="/images/galleryicon.png" class="icon">
-    <span class="expanding-button"> GALLERY </span>
-</a>
-<a href="/contact/">
-    <img src="/images/contacticon.png" class="icon">
-    <span class="expanding-button"> CONTACT </span>
-</a>
-<a href="/aboutme/">
-    <img src="/images/aboutmeicon.png" class="icon">
-    <span class="expanding-button"> ABOUT ME </span>
-</a>
+    <a href="/">
+        <img src="/images/homeicon.png" class="icon">
+        <span class="nav-button-text"> HOME </span>
+    </a>
 </span>
-<span class="show-hide-button" id="show-button">
-    <img src="/images/showicon.png" class="icon" onclick="showNav()">
-</span>
-<span class="show-hide-button" id="hide-button">
-    <img src="/images/hideicon.png" class="icon" onclick="hideNav()">
-</span>
-</header>
+<span class="link-buttons">
+    <span class="nav-hamburger" onclick="showNav()">
+        <img src="/images/hamburger.png" class="icon">
+    </span>
+    <span class="nav-close" onclick="hideNav()">
+        <img src="/images/close.png" class="icon">
+    </span>
+    <span class="link-buttons nav-popup">
+        <a class="expanding-button" href="/gallery/">
+            <img src="/images/galleryicon.png" class="icon">
+            <span class="nav-button-text"> GALLERY </span>
+        </a>
+        <a class="expanding-button" href="/contact/">
+            <img src="/images/contacticon.png" class="icon">
+            <span class="nav-button-text"> CONTACT </span>
+        </a>
+        <a class="expanding-button" href="/aboutme/">
+            <img src="/images/aboutmeicon.png" class="icon">
+            <span class="nav-button-text"> ABOUT ME </span>
+        </a>
+    </span>
+</span></header>
     
 <!-- Pop up image box, see modal.css and imagepopup.js -->
 <div id="my-modal" class="modal">
@@ -96,31 +99,33 @@
   <img id="my-modal-image" class="modal-image">
 </div>
 
-    <div class="center-box"">
-    <h1>Art Gallery</h1>
-    <hr>
-    <br>
-    <div class="image-card">
-        <p><span style="font-size: 15px;">01 </span><span style="font-size: 11px;"">/</span> Syzygy</p>
-        <img class="clickable" src="/images/syzygy.webp" alt="An artwork titled syzygy. It depicts a woman in a white dress who controls a silver substance to create weapons." onclick="popUp(this)">
-        <p class = "caption">A soul in perfect syzygy. Her volition would move the cosmos.</p>
-    </div>
-    <div class="image-card" style="display: none;">
-        <p><span style="font-size: 15px;">02 </span><span style="font-size: 11px;"">/</span> Agent of Hermes</p>
-        <img class="vert-img clickable" src="/images/hermes.webp" alt="An agent of Hermes on a mission in the underworld." onclick="popUp(this)">
-        <p class = "caption">Into the heart of darkness.</p>
-    </div>
-    <div class="image-card" style="display: none;">
-        <p><span style="font-size: 15px;">03 </span><span style="font-size: 11px;"">/</span> Lightyears</p>
-        <img class="clickable" src="/images/lightyears.webp" alt="An artwork titled lightyears. It depicts an giant stone eye with stars in its pupil. Underneath is a lonely lady with clouds, rockets, and a radar in the background." onclick="popUp(this)">
-        <p class = "caption">Will we ever meet again?</p>
-    </div>
+    <div class="center-box" style="justify-content: space-between;">
+    <span class="title-box">
+        <h1>Art Gallery</h1>
+        <hr>
+    </span>
+    <span class="gallery-box">
+        <div class="image-card">
+            <p><span style="font-size: 15px;">01 </span><span style="font-size: 11px;"">/</span> Syzygy</p>
+            <img class="clickable" src="/images/syzygy.webp" alt="An artwork titled syzygy. It depicts a woman in a white dress who controls a silver substance to create weapons." onclick="popUp(this)">
+            <p class = "caption">A soul in perfect syzygy. Her volition would move the cosmos.</p>
+        </div>
+        <div class="image-card" style="display: none;">
+            <p><span style="font-size: 15px;">02 </span><span style="font-size: 11px;"">/</span> Agent of Hermes</p>
+            <img class="vert-img clickable" src="/images/hermes.webp" alt="An agent of Hermes on a mission in the underworld." onclick="popUp(this)">
+            <p class = "caption">Into the heart of darkness.</p>
+        </div>
+        <div class="image-card" style="display: none;">
+            <p><span style="font-size: 15px;">03 </span><span style="font-size: 11px;"">/</span> Lightyears</p>
+            <img class="clickable" src="/images/lightyears.webp" alt="An artwork titled lightyears. It depicts an giant stone eye with stars in its pupil. Underneath is a lonely lady with clouds, rockets, and a radar in the background." onclick="popUp(this)">
+            <p class = "caption">Will we ever meet again?</p>
+        </div>
+    </span>
     <!-- Image card navigation buttons. -->
-    <br>
-    <div class="image-nav-buttons">
+    <span class="image-nav-buttons">
         <img src="/images/hideicon.png" class="icon clickable" onclick="previousImage()">
         <img src="/images/showicon.png" class="icon clickable" onclick="nextImage()">
-    </div>
+    </span>
 </div>
     <div class="footer">
     <span class="socials">

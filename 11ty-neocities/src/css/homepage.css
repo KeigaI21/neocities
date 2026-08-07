@@ -62,7 +62,7 @@ body {
   position: absolute;
   animation-name: moving-text;
   animation-timing-function: linear;
-  animation-duration: 9s;
+  animation-duration: 15s;
   animation-iteration-count: infinite;
 }
 /* Boxed image formatting */
@@ -74,7 +74,7 @@ body {
 }
 
 /* For phone screens */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
   .center-box {
     width: 300px;
   }
