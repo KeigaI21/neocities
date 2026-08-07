@@ -101,7 +101,7 @@ hr {
   box-sizing: border-box;
   width: 100%;
   height: 100%;
-  padding: 7vh 8% 3vh;
+  padding: 6vh 8% 3vh;
   background-color: transparent;
   border-style: none;
   border-color: var(--secondary-color);
